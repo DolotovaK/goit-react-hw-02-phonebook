@@ -1,0 +1,12 @@
+.contact{
+    display: flex;
+}
+
+.name {
+    margin-right: 10px;
+}
+
+.button {
+    width: 70px;
+    margin-left: 10px;
+}
