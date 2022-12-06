@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { ContactList } from './ContactList/ContactList';
-import initialContacts from '../contacts.json';
+import { initialContacts } from '../contacts.json';
 import { Form } from "./Form/Form";
 import { nanoid } from 'nanoid'
 import { Filter } from './Filter/Filter';
@@ -50,7 +50,7 @@ export class App extends Component {
   };
 
   render() {
-    const { contacts, filter } = this.state
+    const { filter } = this.state
     const filteredContacts = this.onGetFilteredContacts();
     return (
       <>
